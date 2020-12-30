@@ -77,6 +77,7 @@ endif
 # Device Init
 PRODUCT_PACKAGES += \
     fstab.kugo \
+    fstab.ramdisk.kugo \
     init.recovery.kugo \
     init.kugo
 
