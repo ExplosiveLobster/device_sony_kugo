@@ -54,10 +54,6 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
     $(DEVICE_PATH)/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb
 
-# Focus calibration
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/vendor/etc/tof_focus_calibration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/tof_focus_calibration.xml
-
 # NFC Configuration
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
@@ -89,12 +85,6 @@ PRODUCT_PACKAGES += \
 # SAR
 PRODUCT_PACKAGES += \
     TransPowerSensors
-
-# Camera Augmented Sensing Helper
-PRODUCT_PACKAGES += \
-   libpolyreg \
-   cashsvr \
-   libcashctl
 
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xhdpi hdpi
